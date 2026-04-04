@@ -2,10 +2,16 @@ using UnityEngine;
 using Ebac.Core.Singleton;
 using TMPro;
 using DG.Tweening;
+using System;
 
 public class PlayerController : Singleton<PlayerController>
 {
     //public
+
+    public bool invencible = false;
+
+    public GameObject endScreen;
+
     [Header("Lerp")]
     public Transform target;
     public float lerpSpeed = 1f;
@@ -18,10 +24,9 @@ public class PlayerController : Singleton<PlayerController>
     [Header("TextMeshPro")]
     public TextMeshPro uiTextPowerUp;
 
+    [Header("Coin Setup")]
+    public GameObject coinCollector;
 
-    public bool invencible = false;
-
-    public GameObject endScreen;
 
     //private
     private bool _canRun;
@@ -52,9 +57,15 @@ public class PlayerController : Singleton<PlayerController>
     {
         if (collision.transform.tag == tagToCheckEnemy)
         {
+            if (collision.GetContact(0).thisCollider.gameObject == coinCollector)
+            {
+                return;
+            }
+
             if (!invencible) EndGame();
         }
     }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.transform.tag == tagToCheckEndLine)
@@ -109,5 +120,9 @@ public class PlayerController : Singleton<PlayerController>
         transform.DOMoveY(_startPosition.y, .1f);
     }
 
+    public void ChangeCoinCollectorSize(float amount)
+    {
+        coinCollector.transform.localScale = Vector3.one * amount;
+    }
     #endregion
 }
