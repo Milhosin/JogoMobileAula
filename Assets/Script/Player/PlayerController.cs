@@ -6,12 +6,7 @@ using System;
 
 public class PlayerController : Singleton<PlayerController>
 {
-    //public
-
-    public bool invencible = false;
-
-    public GameObject endScreen;
-
+    //publics
     [Header("Lerp")]
     public Transform target;
     public float lerpSpeed = 1f;
@@ -21,14 +16,20 @@ public class PlayerController : Singleton<PlayerController>
     public string tagToCheckEnemy = "Enemy";
     public string tagToCheckEndLine = "EndLine";
 
+    public GameObject endScreen;
+
     [Header("TextMeshPro")]
     public TextMeshPro uiTextPowerUp;
+
+    public bool invencible = false;
 
     [Header("Coin Setup")]
     public GameObject coinCollector;
 
+    [Header("Animation")]
+    public AnimatorManager animatorManager;
 
-    //private
+    //privates
     private bool _canRun;
     private Vector3 _pos;
     private float _currentSpeed;
@@ -62,7 +63,11 @@ public class PlayerController : Singleton<PlayerController>
                 return;
             }
 
-            if (!invencible) EndGame();
+            if (!invencible)
+            {
+                MoveBack();
+                EndGame(AnimatorManager.AnimationType.DEAD);
+            }
         }
     }
 
@@ -74,15 +79,22 @@ public class PlayerController : Singleton<PlayerController>
         }
     }
 
-    private void EndGame()
+    private void MoveBack()
+    {
+            transform.DOMoveZ(-1f, .3f).SetRelative();   
+    }
+
+    private void EndGame(AnimatorManager.AnimationType animationType = AnimatorManager.AnimationType.IDLE)
     {
         _canRun = false;
         endScreen.SetActive(true);
+        animatorManager.Play(animationType);
     }
 
     public void StartToRun()
     {
         _canRun = true;
+        animatorManager.Play(AnimatorManager.AnimationType.RUN);
     }
 
     #region POWER UPS
