@@ -78,6 +78,9 @@ public class LevelManager : MonoBehaviour
         {
             CreateLevelPiece(_currSetup.levelPiecesEnd);
         }
+
+        ColorManager.Instance.ChanceColorByType(_currSetup.artType);
+
     }
 
     private void CreateLevelPiece(List<LevelPieceBase> list)
