@@ -119,6 +119,62 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &23756062
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 23756064}
+  - component: {fileID: 23756063}
+  m_Layer: 0
+  m_Name: ColorManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &23756063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23756062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6937af9ae60a900479c0dc99b8d7aef0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ColorManager
+  materiais:
+  - {fileID: 2100000, guid: 35932342e5f3ca345aac42d8bb3e5060, type: 2}
+  - {fileID: 2100000, guid: 71fc31fc5e064754e8783b794997336b, type: 2}
+  colorSetups:
+  - artType: 0
+    colors:
+    - {r: 0.6167866, g: 0.28475437, b: 0.745283, a: 0}
+    - {r: 0.18204114, g: 0.14048593, b: 0.7264151, a: 0}
+  - artType: 1
+    colors:
+    - {r: 0.23958637, g: 0.6698113, b: 0.14217694, a: 0}
+    - {r: 0.89153415, g: 1, b: 0.13679248, a: 0}
+--- !u!4 &23756064
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23756062}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -13.06, y: -0.13, z: -0.88}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &123145496
 GameObject:
   m_ObjectHideFlags: 0
@@ -3016,3 +3072,4 @@ SceneRoots:
   - {fileID: 6529232297430157086}
   - {fileID: 1937687807}
   - {fileID: 1496695580}
+  - {fileID: 23756064}
