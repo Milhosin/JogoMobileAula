@@ -2343,7 +2343,18 @@ MonoBehaviour:
   - {fileID: 2007121391674584932, guid: a73746b1f08e02843b194aa6dbb80975, type: 3}
   - {fileID: 2007121391674584932, guid: 9e67546102083474aa785d8c0f52efd1, type: 3}
   - {fileID: 2007121391674584932, guid: f3d3dbad2515f20459c5239c18e5f189, type: 3}
-  _index: 0
+  levelPiecesStart:
+  - {fileID: 4463942324975008010, guid: dc459d5e1ed7113408a0b5fead242eef, type: 3}
+  levelPieces:
+  - {fileID: 4463942324975008010, guid: 7109e40c58b2de24c8d951decd857ff8, type: 3}
+  - {fileID: 4657812113433682786, guid: f2945283ca76b404fb65818cc15ae95e, type: 3}
+  levelPiecesEnd:
+  - {fileID: 4463942324975008010, guid: e40ffb79ea3ae7c469b99e102856b8b7, type: 3}
+  piecesStartNumber: 3
+  piecesNumber: 5
+  piecesEndNumber: 1
+  timeBetweenPieces: 0.3
+  _index: 1
 --- !u!4 &1937687807
 Transform:
   m_ObjectHideFlags: 0
