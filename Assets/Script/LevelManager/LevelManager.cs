@@ -19,7 +19,7 @@ public class LevelManager : MonoBehaviour
     private LevelPieceBasedSetups _currSetup;
 
 
-    private void Awake()
+    private void Start()
     {
         //SpawnNextLevel();
         CreateLevelPieces();
