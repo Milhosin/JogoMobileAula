@@ -6618,7 +6618,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   target: {fileID: 1801021068}
   lerpSpeed: 1
-  speed: 3
+  speed: 6
   tagToCheckEnemy: Enemy
   tagToCheckEndLine: EndLine
   endScreen: {fileID: 721917595}
@@ -7217,7 +7217,7 @@ Transform:
   m_GameObject: {fileID: 1801021067}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.24, y: -0.35, z: -0.5}
+  m_LocalPosition: {x: -0.24000001, y: 0, z: 5.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
