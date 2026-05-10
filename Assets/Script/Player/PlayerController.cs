@@ -36,6 +36,8 @@ public class PlayerController : Singleton<PlayerController>
     public float limit = 4;
     public Vector2 limitVector = new Vector2(-4, 4);
 
+    [SerializeField] private BounceHelper _bounceHelper;
+
     //privates
     private bool _canRun;
     private Vector3 _pos;
@@ -47,6 +49,12 @@ public class PlayerController : Singleton<PlayerController>
     {
         _startPosition = transform.position;
         ResetSpeed();
+    }
+
+    public void Bounce()
+    {
+        if(_bounceHelper != null)
+            _bounceHelper.Bounce();
     }
 
     void Update()
