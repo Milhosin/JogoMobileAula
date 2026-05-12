@@ -6630,6 +6630,7 @@ MonoBehaviour:
   vfxDeath: {fileID: 1658135628}
   limit: 4
   limitVector: {x: -4, y: 4}
+  _bounceHelper: {fileID: 1292099543}
 --- !u!114 &1292099543
 MonoBehaviour:
   m_ObjectHideFlags: 0
