@@ -7234,7 +7234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3437a55a20275a94da966a6b7b99a0d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinsAnimationManager
-  items: []
+  itens: []
   scaleDuration: 0.2
   scaleTimeBetweenPieces: 0.1
   ease: 27
