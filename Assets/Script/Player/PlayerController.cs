@@ -53,9 +53,11 @@ public class PlayerController : Singleton<PlayerController>
 
     public void Bounce()
     {
-        if(_bounceHelper != null)
-            _bounceHelper.Bounce();
+        // Faz o objeto dar uma "sacudida" na escala e volta sozinho ao original
+        transform.DOPunchScale(new Vector3(0.2f, 0.2f, 0.2f), 0.2f, 10, 0.5f);
     }
+
+
 
     void Update()
     {

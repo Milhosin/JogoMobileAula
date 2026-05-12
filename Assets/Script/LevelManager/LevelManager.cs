@@ -158,6 +158,11 @@ public class LevelManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.D))
         {
+            if (CoinsAnimationManager.Instance != null)
+            {
+                CoinsAnimationManager.Instance.StartAnimations();
+            }
+
             CreateLevelPieces();
         }
     }
