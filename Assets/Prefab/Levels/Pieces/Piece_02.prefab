@@ -105,6 +105,7 @@ GameObject:
   - component: {fileID: 5846830796721145807}
   - component: {fileID: 31655253331860974}
   - component: {fileID: 8333349370758098461}
+  - component: {fileID: 5813991376913487945}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -206,6 +207,21 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &5813991376913487945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3457683306984825139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24fa91b42e3437949859723693e8a20a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ColorChange
+  duration: 1
+  meshRenderer: {fileID: 31655253331860974}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &4466749023303312014
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,6 +234,7 @@ GameObject:
   - component: {fileID: 3758715630762013354}
   - component: {fileID: 7831261104798396117}
   - component: {fileID: 6888387328690937084}
+  - component: {fileID: 3733852115737100630}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -320,6 +337,21 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &3733852115737100630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4466749023303312014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24fa91b42e3437949859723693e8a20a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ColorChange
+  duration: 1
+  meshRenderer: {fileID: 7831261104798396117}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &5292063814830174125
 GameObject:
   m_ObjectHideFlags: 0
@@ -587,6 +619,7 @@ GameObject:
   - component: {fileID: 5438328512938720412}
   - component: {fileID: 3888518528541538583}
   - component: {fileID: 5898835329058040321}
+  - component: {fileID: 4314023526654638393}
   m_Layer: 0
   m_Name: Cylinder (1)
   m_TagString: Untagged
@@ -689,6 +722,21 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &4314023526654638393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8605103273061616329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24fa91b42e3437949859723693e8a20a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ColorChange
+  duration: 1
+  meshRenderer: {fileID: 3888518528541538583}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &771225638965879601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1007,6 +1055,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 249465263041459164}
     m_Modifications:
+    - target: {fileID: 1915412374711247955, guid: 28b43a29d9031fc4296036e4127c1864, type: 3}
+      propertyPath: 'positions.Array.data[0]'
+      value: 
+      objectReference: {fileID: 3412695893016797677}
+    - target: {fileID: 1915412374711247955, guid: 28b43a29d9031fc4296036e4127c1864, type: 3}
+      propertyPath: 'positions.Array.data[1]'
+      value: 
+      objectReference: {fileID: 6620554331523709907}
     - target: {fileID: 1953355407660520561, guid: 28b43a29d9031fc4296036e4127c1864, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.8819165
@@ -1062,37 +1118,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2749288755890518555, guid: 28b43a29d9031fc4296036e4127c1864, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5132565710843702598}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28b43a29d9031fc4296036e4127c1864, type: 3}
 --- !u!4 &5095214255969197412 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1953355407660520561, guid: 28b43a29d9031fc4296036e4127c1864, type: 3}
   m_PrefabInstance: {fileID: 6750438694173100309}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &8901663406456124174 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2749288755890518555, guid: 28b43a29d9031fc4296036e4127c1864, type: 3}
-  m_PrefabInstance: {fileID: 6750438694173100309}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &5132565710843702598
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8901663406456124174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a1a27cf2e5b28947941252659171361, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MovimentHelper
-  positions:
-  - {fileID: 3412695893016797677}
-  - {fileID: 6620554331523709907}
-  duration: 1
 --- !u!1001 &7144184895393334359
 PrefabInstance:
   m_ObjectHideFlags: 0

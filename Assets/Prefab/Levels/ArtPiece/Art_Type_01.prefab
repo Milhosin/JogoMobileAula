@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 4256492736841143232}
   - component: {fileID: 5321860242304873194}
   - component: {fileID: 3194804821749484919}
+  - component: {fileID: 2394083730335349368}
+  - component: {fileID: 5515666483563672497}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -67,7 +69,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 71fc31fc5e064754e8783b794997336b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -112,6 +114,36 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2394083730335349368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4585055259301873602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24fa91b42e3437949859723693e8a20a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ColorChange
+  duration: 1
+  meshRenderer: {fileID: 5321860242304873194}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &5515666483563672497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4585055259301873602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24fa91b42e3437949859723693e8a20a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ColorChange
+  duration: 1
+  meshRenderer: {fileID: 5321860242304873194}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &5090360253162347453
 GameObject:
   m_ObjectHideFlags: 0

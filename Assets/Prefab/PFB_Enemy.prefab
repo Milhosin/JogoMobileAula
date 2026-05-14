@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 4933636038809576929}
   - component: {fileID: 4476951979178216883}
   - component: {fileID: 1275928758394949064}
+  - component: {fileID: 1915412374711247955}
+  - component: {fileID: 3528246890068853134}
   m_Layer: 0
   m_Name: PFB_Enemy
   m_TagString: Enemy
@@ -112,3 +114,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1915412374711247955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2749288755890518555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a1a27cf2e5b28947941252659171361, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MovimentHelper
+  positions:
+  - {fileID: 0}
+  - {fileID: 0}
+  duration: 1
+--- !u!114 &3528246890068853134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2749288755890518555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24fa91b42e3437949859723693e8a20a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ColorChange
+  duration: 1
+  meshRenderer: {fileID: 4476951979178216883}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
