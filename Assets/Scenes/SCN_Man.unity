@@ -711,7 +711,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0.18822348, y: -0.094129406, z: 0.018126348, w: 0.977437}
-  m_LocalPosition: {x: -26.48, y: 3.06, z: -1.8100004}
+  m_LocalPosition: {x: -26.240002, y: 3.06, z: -1.8100004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -949,7 +949,7 @@ Transform:
   m_GameObject: {fileID: 708315438}
   serializedVersion: 2
   m_LocalRotation: {x: 0.18822344, y: -0.09412938, z: 0.01812634, w: 0.977437}
-  m_LocalPosition: {x: 1.2200012, y: 3.06, z: -1.8100004}
+  m_LocalPosition: {x: 1.4599991, y: 3.06, z: -1.8100004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6475,7 +6475,7 @@ Transform:
   m_GameObject: {fileID: 1292099535}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.24000001, y: 0, z: 5.7}
+  m_LocalPosition: {x: 0, y: 0, z: 5.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6628,8 +6628,8 @@ MonoBehaviour:
   coinCollector: {fileID: 1840109718}
   animatorManager: {fileID: 1962461720}
   vfxDeath: {fileID: 1658135628}
-  limit: 4
-  limitVector: {x: -4, y: 4}
+  limit: 5
+  limitVector: {x: -5, y: 5}
   _bounceHelper: {fileID: 1292099543}
 --- !u!114 &1292099543
 MonoBehaviour:
@@ -7282,7 +7282,7 @@ Transform:
   m_GameObject: {fileID: 1801021067}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.24000001, y: 0, z: 5.7}
+  m_LocalPosition: {x: 0, y: 0, z: 5.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

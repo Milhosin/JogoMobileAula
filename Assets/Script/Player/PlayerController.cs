@@ -32,7 +32,7 @@ public class PlayerController : Singleton<PlayerController>
     [Header("VFX")]
     public ParticleSystem vfxDeath;
 
-    [Header("VFX")]
+    [Header("LimitMoviment")]
     public float limit = 4;
     public Vector2 limitVector = new Vector2(-4, 4);
 
@@ -63,13 +63,15 @@ public class PlayerController : Singleton<PlayerController>
     {
         if (!_canRun) return;
 
-
+        
         _pos = target.position;
         _pos.y = transform.position.y;
         _pos.z = transform.position.z;
 
-        /*if (_pos.x < limitVector.x) _pos.x = limitVector.x;
-        else if (_pos.x < limitVector.y) _pos.x = limitVector.y;*/
+        /*
+        if (_pos.x < limitVector.x) _pos.x = limitVector.x;
+        else if (_pos.x < limitVector.y) _pos.x = limitVector.y;
+        */
 
         transform.position = Vector3.Lerp(transform.position, _pos, lerpSpeed * Time.deltaTime);
         transform.Translate(transform.forward * _currentSpeed * Time.deltaTime);
@@ -102,7 +104,7 @@ public class PlayerController : Singleton<PlayerController>
 
     private void MoveBack()
     {
-            transform.DOMoveZ(-1f, .3f).SetRelative();   
+        transform.DOMoveZ(-1f, .3f).SetRelative();
     }
 
     private void EndGame(AnimatorManager.AnimationType animationType = AnimatorManager.AnimationType.IDLE)
